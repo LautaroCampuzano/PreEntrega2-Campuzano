@@ -1,0 +1,37 @@
+.grid__preguntas {
+    margin: 2em;
+}
+
+/*modifiqué las caracteristicas de las clases del accordion*/
+.preguntas__accordions {
+    background-color: $color-dos;
+    color: $color-uno;
+}
+
+.accordion-item {
+    background-color: $color-uno;
+    margin-top: 0.5em;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+    color: bisque;
+    background-color: $color-dos;
+}
+
+.accordion-button:not(.collapsed):focus {
+    background-color: rgba(140, 104, 76, 0.836)
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion-header {
+    border: bisque 3px solid;
+    border-radius: 5px;
+}
+/*fin de la modificación*/

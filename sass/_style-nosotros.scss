@@ -1,0 +1,35 @@
+.nosotros__parrafo {
+    margin: 0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $color-uno;
+    border: 2px solid #d4b692;
+    border-radius: 10px;
+
+    img {
+        margin-top: 0.5em;
+        padding: 0.5em;
+        width: 300px;
+        height: 150px;
+        border-radius: 15px;
+    }
+
+    p {
+        padding: 1em;
+        text-align: center;
+    }
+}
+
+.nosotros__metas {
+    h2 {
+        @include subtitulos-estilo-general;
+    }
+
+    p {
+        @include bloques-estilo-general;
+        justify-content: center;
+        text-align: center;
+        padding: 1em;
+    }
+}

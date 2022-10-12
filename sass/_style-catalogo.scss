@@ -1,0 +1,68 @@
+.grid__catalogo-aside {
+    text-align: center;
+    padding: 0em 1em;
+    
+    h2 {
+        @include subtitulos-estilo-general;
+    }
+
+    div a {
+        color: rgb(196 88 36);
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        list-style-type: none;
+        background-color: $color-uno;
+        margin: 0.3em;
+        padding: 2px;
+        border-radius: 5px;
+        border: 2px solid #d4b692;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+.grid__catalogo h2 {
+    @include subtitulos-estilo-general;
+}
+
+.libro__padre {
+    display: flex;
+    flex-direction: column;
+}
+
+.libro {
+    @include bloques-estilo-general;
+
+    img {
+        width: 100px;
+        height: 175px;
+        margin: 5px;
+        border-radius: 10px;
+        border: 2px solid #d4b692;
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: initial;
+        margin-top: 1em;
+
+        h4 {
+            font-size: medium;
+            font-weight: bolder;
+        }
+
+        p {
+            width: 180px;
+            margin-bottom: 5px;
+        }
+
+        h5 {
+            font-size: 20px;
+        }
+    }
+}

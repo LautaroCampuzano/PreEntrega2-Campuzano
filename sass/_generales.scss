@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(217 193 139);
+    color: #C45824;
+    width: 100%;
+}
+
+nav div ul {
+    width: 100%;
+    text-align: center;
+
+    li {
+        color: #d4b692;
+        margin: 0.5em;
+        border: 2px #d4b692 solid;
+        border-radius: 5px;
+    }
+}
+
+/*modificaciones del código de la navbar de bootstrap*/
+.rgb__brown {
+    background-color: $color-dos;
+}
+
+.navbar-light .navbar-brand,
+.navbar-light .navbar-nav .nav-link.active {
+    font-weight: bolder;
+    color: $color-uno;
+}
+
+.navbar-light .navbar-brand:hover {
+    color: bisque;
+    scale: (1.1);
+}
+
+.navbar-light .navbar-nav .nav-link.active:hover {
+    background-color: $color-uno;
+    color: $color-dos;
+}
+
+.navbar-light .navbar-toggler {
+    border-color: rgba(0, 0, 0, 0);
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+/*fin de las modificaciones*/
+
+
+/*estilo general de los titulos*/
+header h1,
+.grid__contacto-padre h3,
+.preguntas__inferior h3 {
+    background-color: $color-uno;
+    text-align: center;
+    border-radius: 5px;
+    margin: 1em 2em 1em 2em;
+}
+
+/*estilo general de los subtitulos*/
+@mixin subtitulos-estilo-general {
+    background-color: $color-dos;
+    color: $color-uno;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0.5em;
+    padding: 1px;
+}
+
+
+/*estilo general de los bloques*/
+@mixin bloques-estilo-general {
+    margin: 0.5em;
+    display: flex;
+    flex-direction: row;
+    background-color: $color-uno;
+    border: 2px solid #d4b692;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: $color-dos;
+    margin-top: 2em;
+
+    .navegadores {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .redes {
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .barra__inferior a {
+            display: flex;
+            flex-direction: column;
+            text-align: end;
+            color: bisque;
+            text-decoration: none;
+            list-style-type: none;
+            margin: 0.5em 0.5em 0.5em 0em;
+        }
+    }
+
+    p {
+        color: black;
+        text-align: center;
+        font-weight: bolder;
+        padding: 0.5em;
+    }
+}

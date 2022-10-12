@@ -1,0 +1,59 @@
+.grid__contacto-padre h2 {
+    @include subtitulos-estilo-general;
+}
+
+.formulario {
+    margin-bottom: 3em;
+
+    fieldset {
+        display: flex;
+        flex-direction: column;
+        background-color: $color-uno;
+        border-radius: 10px;
+        margin: 0.5em;
+        padding: 1em;
+
+        input {
+            margin: 0.2em;
+            width: 100%;
+            padding: 5px;
+            border: rgb(140 104 76) solid 1px;
+            border-radius: 5px;
+            background-color: rgba(217, 177, 147, 0.61);
+            color: #C45824;
+            text-decoration-color: #C45824;
+        }
+
+        textarea {
+            @extend input;
+        }
+
+        ::placeholder {
+            color: #C45824;
+        }
+    }
+}
+
+.botones {
+    display: flex;
+    flex-direction: row;
+
+    input {
+        width: 120px;
+        padding: 5px 10px 5px 10px;
+    }
+}
+
+.contacto__aside {
+    div a {
+        @include bloques-estilo-general;
+        color: #C45824;
+        align-items: flex-end;
+        padding: 0.5em;
+        text-decoration: none
+    }
+
+    h3 {
+        border: 3px rgb(140 104 76) solid;
+    }
+}

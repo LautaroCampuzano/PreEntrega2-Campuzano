@@ -1,0 +1,82 @@
+.grid__recomendados h3 {
+    @include subtitulos-estilo-general;
+}
+
+.compra__padre {
+    h3 {
+        @include subtitulos-estilo-general;
+    }
+
+    .compra {
+        @include bloques-estilo-general;
+
+        ol {
+            padding-left: 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            justify-content: space-evenly;
+            width: 95%;
+            margin-bottom: 0.2em;
+
+            li {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                list-style-position: none;
+                background-color: rgb(217 177 147);
+                margin: 0.5em;
+                border-radius: 5px;
+                width: 100%;
+            }
+        }
+    }
+}
+
+.pagos__padre {
+    h3 {
+        @include subtitulos-estilo-general
+    }
+
+    .pagos {
+        @include bloques-estilo-general;
+
+        .pagos__segundo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgb(217 177 147);
+            border-radius: 10px;
+            border: 2px double #d4b692;
+            margin: 5px;
+            width: 98%;
+            height: 100px;
+
+            img {
+                padding: 2px;
+                margin: 3px;
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
+}
+
+.grid__index-inferior {
+    @include bloques-estilo-general;
+
+    .inferior__parrafo {
+        img {
+            margin: 0.5em;
+            width: 250px;
+            height: 150px;
+            border-radius: 10px;
+            border: 2px solid #d4b692;
+        }
+
+        p {
+            font-size: 20px;
+            margin-bottom: 1em;
+        }
+    }
+}
