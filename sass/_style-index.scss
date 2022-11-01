@@ -1,9 +1,9 @@
-.grid__recomendados h3 {
+.grid__recomendados h2 {
     @include subtitulos-estilo-general;
 }
 
 .compra__padre {
-    h3 {
+    h2 {
         @include subtitulos-estilo-general;
     }
 
@@ -34,7 +34,7 @@
 }
 
 .pagos__padre {
-    h3 {
+    h2 {
         @include subtitulos-estilo-general
     }
 

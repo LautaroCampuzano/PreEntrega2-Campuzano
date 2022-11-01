@@ -34,21 +34,13 @@
     }
 }
 
-.botones {
-    display: flex;
-    flex-direction: row;
-
-    input {
-        width: 120px;
-        padding: 5px 10px 5px 10px;
-    }
-}
-
 .contacto__aside {
+    align-items: center;
+    
     div a {
         @include bloques-estilo-general;
         color: #C45824;
-        align-items: flex-end;
+        align-items: center;
         padding: 0.5em;
         text-decoration: none
     }

@@ -17,10 +17,6 @@
         padding: 2px;
         border-radius: 5px;
         border: 2px solid #d4b692;
-
-        &:hover {
-            transform: scale(1.1);
-        }
     }
 }
 
@@ -51,7 +47,7 @@
         text-align: initial;
         margin-top: 1em;
 
-        h4 {
+        h3 {
             font-size: medium;
             font-weight: bolder;
         }
@@ -61,7 +57,7 @@
             margin-bottom: 5px;
         }
 
-        h5 {
+        h4 {
             font-size: 20px;
         }
     }
